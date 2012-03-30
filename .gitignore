@@ -1,0 +1,13 @@
+src/ipch/
+src/Debug/
+src/Release/
+src/ipch/
+src/x64/
+src/clipboard-eliminator.opensdf
+src/clipboard-eliminator.sdf
+src/clipboard-eliminator.sln.docstates.suo
+src/clipboard-eliminator.suo
+src/clipboard-eliminator/Debug/
+src/clipboard-eliminator/Release/
+src/clipboard-eliminator/x64/
+src/clipboard-eliminator/clipboard-eliminator.vcxproj.user
