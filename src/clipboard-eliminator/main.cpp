@@ -14,6 +14,10 @@ namespace {
 
   LRESULT CALLBACK WindowProc(HWND hWnd, UINT Msg, WPARAM wParam, LPARAM lParam) {
     switch(Msg) {
+      case WM_CREATE:
+        hwndNext = SetClipboardViewer(hWnd);
+        return 0;
+
       case WM_DRAWCLIPBOARD:
         SendMessage(hwndNext, Msg, wParam, lParam);
         if(CountClipboardFormats() > 0) {
@@ -72,8 +76,6 @@ namespace {
 
     ShowWindow(hWnd, SW_MINIMIZE);
     ShowWindow(hWnd, SW_HIDE);
-
-    hwndNext = SetClipboardViewer(hWnd);
 
     MSG msg;
     while(GetMessage(&msg, 0, 0, 0)) {
