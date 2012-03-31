@@ -20,7 +20,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{F8109C1C-D1D8-45B3-800E-15C4ED4AFD78}</ProjectGuid>
-    <RootNamespace>SmartWheel</RootNamespace>
+    <RootNamespace>clipboard-eliminator</RootNamespace>
     <Keyword>Win32Proj</Keyword>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -183,10 +183,10 @@
     <ClInclude Include="util.hpp" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="clipboard-eliminator.rc" />
+    <Manifest Include="clipboard-eliminator.exe.manifest" />
   </ItemGroup>
   <ItemGroup>
-    <Manifest Include="clipboard-eliminator.exe.manifest" />
+    <ResourceCompile Include="clipboard-eliminator.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
